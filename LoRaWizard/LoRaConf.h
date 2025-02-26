@@ -23,6 +23,9 @@ typedef struct {
 
 } LoRaConfig;
 
+extern PacketParams_t packetParams;
+extern const RadioLoRaBandwidths_t Bandwidths[];
+
 LoRaConfig getDefaultLoRaConfig(void);
 LoRaConfig createLoRaConfig(LoRaConfig conf);
 void LoraInit(LoRaConfig config, DioIrqHandler RadioOnDioIrq);
