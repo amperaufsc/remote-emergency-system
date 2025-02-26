@@ -4084,6 +4084,191 @@ Discarded input sections
  .debug_macro   0x00000000       0xa6 ./Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.o
  .debug_macro   0x00000000      0x45a ./Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.o
  .debug_macro   0x00000000      0x3c0 ./Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .group         0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .text          0x00000000        0x0 ./LoRaWizard/LoRaConf.o
+ .data          0x00000000        0x0 ./LoRaWizard/LoRaConf.o
+ .bss           0x00000000        0x0 ./LoRaWizard/LoRaConf.o
+ .rodata.CHANNEL_OFFSET_TAB
+                0x00000000        0x7 ./LoRaWizard/LoRaConf.o
+ .bss.packetParams
+                0x00000000       0x14 ./LoRaWizard/LoRaConf.o
+ .rodata.Bandwidths
+                0x00000000        0x3 ./LoRaWizard/LoRaConf.o
+ .rodata        0x00000000        0xc ./LoRaWizard/LoRaConf.o
+ .text.getDefaultLoRaConfig
+                0x00000000       0x20 ./LoRaWizard/LoRaConf.o
+ .text.createLoRaConfig
+                0x00000000       0x58 ./LoRaWizard/LoRaConf.o
+ .text.LoraInit
+                0x00000000       0xf0 ./LoRaWizard/LoRaConf.o
+ .debug_info    0x00000000      0x8c1 ./LoRaWizard/LoRaConf.o
+ .debug_abbrev  0x00000000      0x1cd ./LoRaWizard/LoRaConf.o
+ .debug_aranges
+                0x00000000       0x30 ./LoRaWizard/LoRaConf.o
+ .debug_rnglists
+                0x00000000       0x20 ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000      0x3c9 ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000      0xaae ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000       0x22 ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000       0x8e ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000       0x51 ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000      0x103 ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000       0x6a ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000      0x1df ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000       0x22 ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000       0x10 ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000       0x2e ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000       0x3a ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000       0x1c ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000       0x22 ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000       0xfb ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000     0x1011 ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000      0x11f ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000     0xf31a ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000       0x6d ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000      0x124 ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000     0x341d ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000      0x189 ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000       0x5c ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000      0x416 ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000      0x29c ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000      0x35a ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000      0x196 ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000       0x4a ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000      0x236 ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000      0x229 ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000      0x3fa ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000       0x2e ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000      0x107 ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000      0x1ba ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000       0xe6 ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000      0x283 ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000      0x133 ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000      0x36f ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000      0x683 ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000      0x20e ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000      0xfb4 ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000      0x136 ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000      0x2db ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000      0x288 ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000       0xd6 ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000      0x693 ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000       0xa6 ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000      0x45a ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000      0x3c0 ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000       0x52 ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000       0x1c ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000       0xb8 ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000      0x145 ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000       0x61 ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000       0x24 ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000       0x43 ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000       0x34 ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000       0x16 ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000       0x35 ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000      0x369 ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000       0x10 ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000       0x16 ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000       0x43 ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000       0x34 ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000       0x10 ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000       0x58 ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000       0x8e ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000       0x1c ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000      0x177 ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000       0x16 ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000       0x16 ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000      0x146 ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000       0x16 ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000       0x20 ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000       0xf4 ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000       0x10 ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000       0x1c ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000       0x61 ./LoRaWizard/LoRaConf.o
+ .debug_macro   0x00000000      0x28c ./LoRaWizard/LoRaConf.o
+ .debug_line    0x00000000      0xca3 ./LoRaWizard/LoRaConf.o
+ .debug_str     0x00000000    0xb005e ./LoRaWizard/LoRaConf.o
+ .comment       0x00000000       0x44 ./LoRaWizard/LoRaConf.o
+ .debug_frame   0x00000000       0x88 ./LoRaWizard/LoRaConf.o
+ .ARM.attributes
+                0x00000000       0x2e ./LoRaWizard/LoRaConf.o
  .group         0x00000000        0xc ./Utils/misc/stm32_mem.o
  .group         0x00000000        0xc ./Utils/misc/stm32_mem.o
  .group         0x00000000        0xc ./Utils/misc/stm32_mem.o
@@ -4445,6 +4630,7 @@ LOAD ./Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc_ex.o
 LOAD ./Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_subghz.o
 LOAD ./Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart.o
 LOAD ./Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.o
+LOAD ./LoRaWizard/LoRaConf.o
 LOAD ./Utils/misc/stm32_mem.o
 START GROUP
 LOAD C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.1.0.202410251130/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a

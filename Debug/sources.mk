@@ -27,5 +27,6 @@ Core/Startup \
 Drivers/BSP/STM32WLxx_Nucleo \
 Drivers/Radio \
 Drivers/STM32WLxx_HAL_Driver/Src \
+LoRaWizard \
 Utils/misc \
 
