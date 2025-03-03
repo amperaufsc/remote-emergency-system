@@ -8,6 +8,7 @@
 #ifndef LORACONF_H_
 #define LORACONF_H_
 
+#include "LoRaEvents.h"
 #include <stdint.h>
 #include "radio_driver.h"
 #include "subghz.h"
@@ -28,6 +29,6 @@ extern const RadioLoRaBandwidths_t Bandwidths[];
 
 LoRaConfig getDefaultLoRaConfig(void);
 LoRaConfig createLoRaConfig(LoRaConfig conf);
-void LoraInit(LoRaConfig config, DioIrqHandler RadioOnDioIrq);
+void LoraInit(LoRaConfig config);
 
 #endif /* LORACONF_H_ */
