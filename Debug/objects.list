@@ -28,4 +28,6 @@
 "./Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart.o"
 "./Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.o"
 "./LoRaWizard/LoRaConf.o"
+"./LoRaWizard/LoRaEvents.o"
+"./LoRaWizard/LoRaMessageHandler.o"
 "./Utils/misc/stm32_mem.o"

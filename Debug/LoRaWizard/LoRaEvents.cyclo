@@ -1,0 +1,3 @@
+../LoRaWizard/LoRaEvents.c:12:6:RadioOnDioIrq	1
+../LoRaWizard/LoRaEvents.c:16:15:LoRaEventHandler	7
+../LoRaWizard/LoRaEvents.c:31:15:getLastLoRaEvent	1

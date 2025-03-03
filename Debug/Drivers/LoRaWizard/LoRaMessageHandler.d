@@ -1,8 +1,10 @@
-Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
- ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal.h \
- ../Core/Inc/stm32wlxx_hal_conf.h \
- ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_dma.h \
- ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_def.h \
+Drivers/LoRaWizard/LoRaMessageHandler.o: \
+ ../Drivers/LoRaWizard/LoRaMessageHandler.c \
+ ../Drivers/LoRaWizard/LoRaMessageHandler.h \
+ ../Drivers/LoRaWizard/LoraConf.h ../Drivers/LoRaWizard/LoRaEvents.h \
+ C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/Drivers/Radio/radio_driver.h \
+ C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/Drivers/Radio/radio_conf.h \
+ ../Core/Inc/platform.h \
  ../Drivers/CMSIS/Device/ST/STM32WLxx/Include/stm32wlxx.h \
  ../Drivers/CMSIS/Device/ST/STM32WLxx/Include/stm32wl55xx.h \
  ../Drivers/CMSIS/Include/core_cm4.h \
@@ -11,6 +13,10 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/CMSIS/Include/cmsis_gcc.h \
  ../Drivers/CMSIS/Include/mpu_armv7.h \
  ../Drivers/CMSIS/Device/ST/STM32WLxx/Include/system_stm32wlxx.h \
+ ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal.h \
+ ../Core/Inc/stm32wlxx_hal_conf.h \
+ ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_dma.h \
+ ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_def.h \
  ../Drivers/STM32WLxx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_dma.h \
  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_dmamux.h \
@@ -34,29 +40,22 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h \
  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h \
  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h \
- ../Core/Inc/subghz.h ../Core/Inc/main.h ../Core/Inc/usart.h \
- ../Core/Inc/gpio.h \
- C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/LoRaWizard/LoRaConf.h \
- C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/LoRaWizard/LoRaEvents.h \
- C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/Drivers/Radio/radio_driver.h \
- C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/Drivers/Radio/radio_conf.h \
- ../Core/Inc/platform.h \
+ ../Core/Inc/main.h \
  C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo_radio.h \
  C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo_errno.h \
  C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo_conf.h \
  C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo.h \
+ ../Core/Inc/subghz.h \
  C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/Utils/misc/stm32_mem.h \
  C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/Utils/conf/utilities_conf.h \
  ../Drivers/CMSIS/Include/cmsis_compiler.h \
- C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/Drivers/Radio/radio_board_if.h \
- C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/LoRaWizard/LoRaEvents.h \
- C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/LoRaWizard/LoRaMessageHandler.h \
- C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/LoRaWizard/LoraConf.h
-../Core/Inc/main.h:
-../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal.h:
-../Core/Inc/stm32wlxx_hal_conf.h:
-../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_dma.h:
-../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_def.h:
+ C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/Drivers/Radio/radio_board_if.h
+../Drivers/LoRaWizard/LoRaMessageHandler.h:
+../Drivers/LoRaWizard/LoraConf.h:
+../Drivers/LoRaWizard/LoRaEvents.h:
+C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/Drivers/Radio/radio_driver.h:
+C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/Drivers/Radio/radio_conf.h:
+../Core/Inc/platform.h:
 ../Drivers/CMSIS/Device/ST/STM32WLxx/Include/stm32wlxx.h:
 ../Drivers/CMSIS/Device/ST/STM32WLxx/Include/stm32wl55xx.h:
 ../Drivers/CMSIS/Include/core_cm4.h:
@@ -65,6 +64,10 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Drivers/CMSIS/Include/cmsis_gcc.h:
 ../Drivers/CMSIS/Include/mpu_armv7.h:
 ../Drivers/CMSIS/Device/ST/STM32WLxx/Include/system_stm32wlxx.h:
+../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal.h:
+../Core/Inc/stm32wlxx_hal_conf.h:
+../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_dma.h:
+../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_def.h:
 ../Drivers/STM32WLxx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:
 ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_dma.h:
 ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_dmamux.h:
@@ -88,23 +91,13 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h:
 ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h:
 ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h:
-../Core/Inc/subghz.h:
 ../Core/Inc/main.h:
-../Core/Inc/usart.h:
-../Core/Inc/gpio.h:
-C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/LoRaWizard/LoRaConf.h:
-C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/LoRaWizard/LoRaEvents.h:
-C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/Drivers/Radio/radio_driver.h:
-C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/Drivers/Radio/radio_conf.h:
-../Core/Inc/platform.h:
 C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo_radio.h:
 C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo_errno.h:
 C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo_conf.h:
 C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo.h:
+../Core/Inc/subghz.h:
 C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/Utils/misc/stm32_mem.h:
 C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/Utils/conf/utilities_conf.h:
 ../Drivers/CMSIS/Include/cmsis_compiler.h:
 C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/Drivers/Radio/radio_board_if.h:
-C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/LoRaWizard/LoRaEvents.h:
-C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/LoRaWizard/LoRaMessageHandler.h:
-C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/LoRaWizard/LoraConf.h:

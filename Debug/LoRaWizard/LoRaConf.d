@@ -1,4 +1,5 @@
 LoRaWizard/LoRaConf.o: ../LoRaWizard/LoRaConf.c ../LoRaWizard/LoRaConf.h \
+ ../LoRaWizard/LoRaEvents.h \
  C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/Drivers/Radio/radio_driver.h \
  C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/Drivers/Radio/radio_conf.h \
  ../Core/Inc/platform.h \
@@ -48,6 +49,7 @@ LoRaWizard/LoRaConf.o: ../LoRaWizard/LoRaConf.c ../LoRaWizard/LoRaConf.h \
  ../Drivers/CMSIS/Include/cmsis_compiler.h \
  C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/Drivers/Radio/radio_board_if.h
 ../LoRaWizard/LoRaConf.h:
+../LoRaWizard/LoRaEvents.h:
 C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/Drivers/Radio/radio_driver.h:
 C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/Drivers/Radio/radio_conf.h:
 ../Core/Inc/platform.h:

@@ -1,0 +1,3 @@
+../Drivers/LoRaWizard/LoRaConf.c:13:12:getDefaultLoRaConfig	1
+../Drivers/LoRaWizard/LoRaConf.c:25:12:createLoRaConfig	3
+../Drivers/LoRaWizard/LoRaConf.c:40:6:LoraInit	1
