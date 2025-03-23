@@ -7,17 +7,20 @@
 C_SRCS += \
 ../LoRaWizard/LoRaConf.c \
 ../LoRaWizard/LoRaEvents.c \
-../LoRaWizard/LoRaMessageHandler.c 
+../LoRaWizard/LoRaMessageHandler.c \
+../LoRaWizard/mainLoRa.c 
 
 OBJS += \
 ./LoRaWizard/LoRaConf.o \
 ./LoRaWizard/LoRaEvents.o \
-./LoRaWizard/LoRaMessageHandler.o 
+./LoRaWizard/LoRaMessageHandler.o \
+./LoRaWizard/mainLoRa.o 
 
 C_DEPS += \
 ./LoRaWizard/LoRaConf.d \
 ./LoRaWizard/LoRaEvents.d \
-./LoRaWizard/LoRaMessageHandler.d 
+./LoRaWizard/LoRaMessageHandler.d \
+./LoRaWizard/mainLoRa.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -27,7 +30,7 @@ LoRaWizard/%.o LoRaWizard/%.su LoRaWizard/%.cyclo: ../LoRaWizard/%.c LoRaWizard/
 clean: clean-LoRaWizard
 
 clean-LoRaWizard:
-	-$(RM) ./LoRaWizard/LoRaConf.cyclo ./LoRaWizard/LoRaConf.d ./LoRaWizard/LoRaConf.o ./LoRaWizard/LoRaConf.su ./LoRaWizard/LoRaEvents.cyclo ./LoRaWizard/LoRaEvents.d ./LoRaWizard/LoRaEvents.o ./LoRaWizard/LoRaEvents.su ./LoRaWizard/LoRaMessageHandler.cyclo ./LoRaWizard/LoRaMessageHandler.d ./LoRaWizard/LoRaMessageHandler.o ./LoRaWizard/LoRaMessageHandler.su
+	-$(RM) ./LoRaWizard/LoRaConf.cyclo ./LoRaWizard/LoRaConf.d ./LoRaWizard/LoRaConf.o ./LoRaWizard/LoRaConf.su ./LoRaWizard/LoRaEvents.cyclo ./LoRaWizard/LoRaEvents.d ./LoRaWizard/LoRaEvents.o ./LoRaWizard/LoRaEvents.su ./LoRaWizard/LoRaMessageHandler.cyclo ./LoRaWizard/LoRaMessageHandler.d ./LoRaWizard/LoRaMessageHandler.o ./LoRaWizard/LoRaMessageHandler.su ./LoRaWizard/mainLoRa.cyclo ./LoRaWizard/mainLoRa.d ./LoRaWizard/mainLoRa.o ./LoRaWizard/mainLoRa.su
 
 .PHONY: clean-LoRaWizard
 

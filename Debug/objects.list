@@ -30,4 +30,5 @@
 "./LoRaWizard/LoRaConf.o"
 "./LoRaWizard/LoRaEvents.o"
 "./LoRaWizard/LoRaMessageHandler.o"
+"./LoRaWizard/mainLoRa.o"
 "./Utils/misc/stm32_mem.o"

@@ -25,7 +25,7 @@ LoRaIrqStatus SendMessage(const char *message) {
 	SUBGRF_SetPacketParams(&packetParams);
 	SUBGRF_SendPayload((uint8_t *)message, strlen(message), 0);
 
-	while (getLastLoRaEvent() == IRQ_DEFAULT_RETURN_STATUS);
+	//while (getLastLoRaEvent() == IRQ_DEFAULT_RETURN_STATUS);
 	return getLastLoRaEvent();
 }
 
