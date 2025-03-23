@@ -10,21 +10,21 @@
 volatile LoRaIrqStatus lastEventStatus = IRQ_DEFAULT_RETURN_STATUS;
 
 void RadioOnDioIrq(RadioIrqMasks_t radioIrq) {
-    LoRaEventHandler(radioIrq);
+	lastEventStatus = LoRaEventHandler(radioIrq);
 }
 
-LoRaIrqStatus LoRaEventHandler(uint16_t irqStatus) {
-    switch (irqStatus) {
+LoRaIrqStatus LoRaEventHandler(RadioIrqMasks_t radioIrq) {
+    switch (radioIrq) {
         case IRQ_TX_DONE:
-            return lastEventStatus = IRQ_TX_DONE_STATUS;
+            return IRQ_TX_DONE_STATUS;
         case IRQ_RX_DONE:
-            return lastEventStatus = IRQ_RX_DONE_STATUS;
+            return IRQ_RX_DONE_STATUS;
         case IRQ_RX_TX_TIMEOUT:
-            return lastEventStatus = IRQ_RX_TX_TIMEOUT_STATUS;
+            return IRQ_RX_TX_TIMEOUT_STATUS;
         case IRQ_CRC_ERROR:
-            return lastEventStatus = IRQ_CRC_ERROR_STATUS;
+            return IRQ_CRC_ERROR_STATUS;
         default:
-            return lastEventStatus = IRQ_DEFAULT_RETURN_STATUS;
+            return IRQ_DEFAULT_RETURN_STATUS;
     }
 }
 
