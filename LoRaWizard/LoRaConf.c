@@ -10,6 +10,17 @@
 PacketParams_t packetParams;
 const RadioLoRaBandwidths_t Bandwidths[] = { LORA_BW_125, LORA_BW_250, LORA_BW_500 };
 
+/*	Sitting operation mode
+ *	0 = STATE_MASTER
+ *  1 = STATE_SLAVE
+ */
+LoRaState setStateMode (uint8_t  mode) {
+	if (mode == 0) return STATE_MASTER;
+	if (mode == 1) return STATE_SLAVE;
+
+	return STATE_NULL;
+}
+
 LoRaConfig getDefaultLoRaConfig (void) {
 	return (LoRaConfig){
 		.rf_frequency = 868000000,
