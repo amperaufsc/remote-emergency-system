@@ -1,4 +1,4 @@
 ../LoRaWizard/LoRaConf.c:17:11:setStateMode	3
 ../LoRaWizard/LoRaConf.c:24:12:getDefaultLoRaConfig	1
 ../LoRaWizard/LoRaConf.c:36:12:createLoRaConfig	3
-../LoRaWizard/LoRaConf.c:51:6:LoraInit	1
+../LoRaWizard/LoRaConf.c:50:6:LoraInit	1

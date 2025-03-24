@@ -47,7 +47,6 @@ LoRaConfig createLoRaConfig(LoRaConfig conf) {
     return config;
 }
 
-
 void LoraInit(LoRaConfig config) {
 	// Initialize the hardware (SPI bus, TCXO control, RF switch)
 	SUBGRF_Init(RadioOnDioIrq);

@@ -9,9 +9,6 @@
 #define LORACONF_H_
 
 #include "LoRaEvents.h"
-#include <stdint.h>
-#include "radio_driver.h"
-#include "subghz.h"
 
 typedef enum {
 	STATE_NULL,

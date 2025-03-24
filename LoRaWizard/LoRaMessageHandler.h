@@ -9,7 +9,6 @@
 #define LORAMESSAGEHANDLER_H_
 
 #include "LoraConf.h"
-#include <string.h>
 
 LoRaIrqStatus SendMessage(const char *message);
 LoRaIrqStatus receiveMessage(char *buffer, uint8_t bufferSize, uint16_t Timeout);

@@ -7,12 +7,12 @@
 
 #include "LoRaMessageHandler.h"
 
-#define LORA_MAX_PAYLOAD_SIZE 255
-
 LoRaIrqStatus SendMessage(const char *message) {
 	if (message == NULL || strlen(message) == 0) {
 		return IRQ_CRC_ERROR_STATUS;  // Invalid message
 	}
+
+	HAL_Delay(100);
 
 	SUBGRF_SetDioIrqParams( IRQ_TX_DONE | IRQ_RX_TX_TIMEOUT,
 	                          IRQ_TX_DONE | IRQ_RX_TX_TIMEOUT,
@@ -30,7 +30,7 @@ LoRaIrqStatus SendMessage(const char *message) {
 }
 
 LoRaIrqStatus receiveMessage(char *buffer, uint8_t bufferSize, uint16_t Timeout) {
-    if (buffer == NULL || bufferSize == 0) {
+    if (buffer == NULL || bufferSize <= 0) {
         return IRQ_CRC_ERROR_STATUS;  // Invalid buffer
     }
 
@@ -39,13 +39,15 @@ LoRaIrqStatus receiveMessage(char *buffer, uint8_t bufferSize, uint16_t Timeout)
                            IRQ_RADIO_NONE,
                            IRQ_RADIO_NONE);
     SUBGRF_SetSwitch(RFO_LP, RFSWITCH_RX);
+    packetParams.Params.LoRa.PayloadLength = 0xFF;
+    SUBGRF_SetPacketParams(&packetParams);
     SUBGRF_SetRx(Timeout << 6);
 
     LoRaIrqStatus event = getLastLoRaEvent();
 
     if (event == IRQ_RX_DONE_STATUS) {
-    	uint8_t rxSize = SUBGRF_GetPayload((uint8_t *)buffer, (uint8_t)bufferSize, 255);
-        buffer[rxSize] = '\0';
+    	SUBGRF_GetPayload((uint8_t *)buffer, (uint8_t)bufferSize, 0xFF);
+    	buffer[bufferSize] = '\0';
         return IRQ_RX_DONE_STATUS;
     }
 
