@@ -12,16 +12,6 @@
 #include "LoRaEvents.h"
 #include "LoRaMessageHandler.h"
 
-typedef struct {
-    LoRaState state;
-    LoRaSubState subState;
-    uint32_t rxTimeout;
-    uint32_t rxMargin;
-    char rxBuffer[RX_BUFFER_SIZE];
-    uint8_t rxSize;
-} ConfigRES;
-
-void transitionRxDone(ConfigRES *const RES);
 void mainLoRa(void);
 
 #endif /* MAINLORA_H_ */
