@@ -18,13 +18,16 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "spi.h"
 #include "subghz.h"
+#include "tim.h"
 #include "usart.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "mainLoRa.h";
+#include "CANSPI.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -56,7 +59,12 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+uint16_t rxValue;
+char sstr[5];
+char snum[5];
+uCAN_MSG txMessage;
+uCAN_MSG rxMessage;
+uint8_t cont = 0 ;
 /* USER CODE END 0 */
 
 /**
@@ -76,7 +84,7 @@ int main(void)
   HAL_Init();
 
   /* USER CODE BEGIN Init */
-
+  HAL_TIM_Base_Start_IT(&htim2);
   /* USER CODE END Init */
 
   /* Configure the system clock */
@@ -90,16 +98,32 @@ int main(void)
   MX_GPIO_Init();
   MX_SUBGHZ_Init();
   MX_USART2_UART_Init();
+  MX_SPI1_Init();
+  MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
-
+  if(!CANSPI_Initialize()){
+	  cont = 1 ;
+  }
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+	  txMessage.frame.idType = dSTANDARD_CAN_MSG_ID_2_0B;
+	  txMessage.frame.id = 0x127; // ID can be between Hex1 and Hex7FF (1-2047 decimal)
+	  txMessage.frame.dlc = 8;
+	  txMessage.frame.data0 = 'S';
+	  txMessage.frame.data1 = 'T';
+	  txMessage.frame.data2 = 'M';
+	  txMessage.frame.data3 = '3';
+	  txMessage.frame.data4 = '2';
+	  txMessage.frame.data5 = '-';
+	  CANSPI_Transmit(&txMessage);
+	  HAL_Delay(100);
+	  //mainLoRa();
     /* USER CODE END WHILE */
-    mainLoRa();
+
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
@@ -114,16 +138,22 @@ void SystemClock_Config(void)
   RCC_OscInitTypeDef RCC_OscInitStruct = {0};
   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
 
+  /** Configure LSE Drive Capability
+  */
+  HAL_PWR_EnableBkUpAccess();
+  __HAL_RCC_LSEDRIVE_CONFIG(RCC_LSEDRIVE_LOW);
+
   /** Configure the main internal regulator output voltage
   */
-  __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE1);
+  __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE2);
 
   /** Initializes the CPU, AHB and APB buses clocks
   */
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_MSI;
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_LSE|RCC_OSCILLATORTYPE_MSI;
+  RCC_OscInitStruct.LSEState = RCC_LSE_ON;
   RCC_OscInitStruct.MSIState = RCC_MSI_ON;
   RCC_OscInitStruct.MSICalibrationValue = RCC_MSICALIBRATION_DEFAULT;
-  RCC_OscInitStruct.MSIClockRange = RCC_MSIRANGE_11;
+  RCC_OscInitStruct.MSIClockRange = RCC_MSIRANGE_6;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_NONE;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
   {
@@ -141,7 +171,7 @@ void SystemClock_Config(void)
   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
   RCC_ClkInitStruct.AHBCLK3Divider = RCC_SYSCLK_DIV1;
 
-  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK)
+  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_0) != HAL_OK)
   {
     Error_Handler();
   }
@@ -162,6 +192,7 @@ void Error_Handler(void)
   __disable_irq();
   while (1)
   {
+	  cont = 1;
   }
   /* USER CODE END Error_Handler_Debug */
 }

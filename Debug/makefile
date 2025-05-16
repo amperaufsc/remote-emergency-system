@@ -1,6 +1,6 @@
 ################################################################################
 # Automatically-generated file. Do not edit!
-# Toolchain: GNU Tools for STM32 (12.3.rel1)
+# Toolchain: GNU Tools for STM32 (13.3.rel1)
 ################################################################################
 
 -include ../makefile.init
@@ -56,6 +56,12 @@ default.size.stdout \
 OBJDUMP_LIST += \
 remote-emergency-system.list \
 
+OBJCOPY_HEX += \
+remote-emergency-system.hex \
+
+OBJCOPY_BIN += \
+remote-emergency-system.bin \
+
 
 # All Target
 all: main-build
@@ -79,12 +85,22 @@ remote-emergency-system.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TO
 	@echo 'Finished building: $@'
 	@echo ' '
 
+remote-emergency-system.hex: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objcopy  -O ihex $(EXECUTABLES) "remote-emergency-system.hex"
+	@echo 'Finished building: $@'
+	@echo ' '
+
+remote-emergency-system.bin: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objcopy  -O binary $(EXECUTABLES) "remote-emergency-system.bin"
+	@echo 'Finished building: $@'
+	@echo ' '
+
 # Other Targets
 clean:
-	-$(RM) default.size.stdout remote-emergency-system.elf remote-emergency-system.list remote-emergency-system.map
+	-$(RM) default.size.stdout remote-emergency-system.bin remote-emergency-system.elf remote-emergency-system.hex remote-emergency-system.list remote-emergency-system.map
 	-@echo ' '
 
-secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)
+secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST) $(OBJCOPY_HEX) $(OBJCOPY_BIN)
 
 fail-specified-linker-script-missing:
 	@echo 'Error: Cannot find the specified linker script. Check the linker settings in the build configuration.'
