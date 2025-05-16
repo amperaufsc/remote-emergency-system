@@ -25,7 +25,8 @@ LoRaIrqStatus SendMessage(const char *message) {
 	SUBGRF_SetPacketParams(&packetParams);
 	SUBGRF_SendPayload((uint8_t *)message, strlen(message), 0);
 
-	//while (getLastLoRaEvent() == IRQ_DEFAULT_RETURN_STATUS);
+	HAL_Delay(200);
+
 	return getLastLoRaEvent();
 }
 
@@ -47,7 +48,8 @@ LoRaIrqStatus receiveMessage(char *buffer, uint8_t bufferSize, uint16_t Timeout)
 
     if (event == IRQ_RX_DONE_STATUS) {
     	SUBGRF_GetPayload((uint8_t *)buffer, (uint8_t)bufferSize, 0xFF);
-    	buffer[bufferSize] = '\0';
+    	buffer[bufferSize - 1] = '\0';
+    	HAL_Delay(500);
         return IRQ_RX_DONE_STATUS;
     }
 
