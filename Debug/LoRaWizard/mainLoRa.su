@@ -1,2 +1,5 @@
-../LoRaWizard/mainLoRa.c:15:6:transitionRxDone	88	static
-../LoRaWizard/mainLoRa.c:31:6:mainLoRa	552	static
+../LoRaWizard/mainLoRa.c:15:6:mainLoRa	560	static
+../LoRaWizard/mainLoRa.c:38:6:HAL_GPIO_EXTI_Callback	16	static
+../LoRaWizard/mainLoRa.c:69:6:CAN_SEND	4	static
+../LoRaWizard/mainLoRa.c:74:6:SlaveController	264	static
+../LoRaWizard/mainLoRa.c:102:6:MasterController	16	static

@@ -7,7 +7,7 @@
 
 #include "mainLoRa.h"
 
-#define STATE_MODE 1
+#define STATE_MODE 0
 
 extern UART_HandleTypeDef huart2;
 enum CarState car = STATE_NULL;
@@ -34,10 +34,16 @@ void mainLoRa(void) {
     }
 }
 
+uint8_t count = 0;
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
 	switch (GPIO_Pin) {
 		case NextState_Pin:
-			car++;
+			count = 0;
+			while (count <= 100){
+				count++;
+				SendMessage("EMERGENCY");
+			}
+			/*car++;
 			uint8_t count = 0;
 			if (car == READY) {
 				while (count <= 100){
@@ -55,7 +61,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
 					count++;
 					SendMessage("EMERGENCY");
 				}
-			}
+			}*/
 			break;
     }
 }
@@ -74,13 +80,43 @@ void SlaveController (ConfigRES RES) {
 		if (strncmp(RES.rxBuffer, "READY", strlen("READY")) == 0){
 			teste = 1;
 		} else if (strncmp(RES.rxBuffer, "GO", strlen("GO")) == 0){
+			HAL_GPIO_WritePin(EBS_GPIO_Port, EBS_Pin, 1);
+			HAL_GPIO_WritePin(ShutDown_GPIO_Port, ShutDown_Pin, 1);
 			teste = 2;
 		} else if (strncmp(RES.rxBuffer, "EMERGENCY", strlen("EMERGENCY")) == 0){
 			teste = 3;
+			sprintf(uartBuff, "Emergency\r\n");
+			HAL_UART_Transmit(&huart2, (uint8_t *)uartBuff, strlen(uartBuff), HAL_MAX_DELAY);
+			HAL_GPIO_WritePin(EBS_GPIO_Port, EBS_Pin, 0);
+			HAL_GPIO_WritePin(ShutDown_GPIO_Port, ShutDown_Pin, 0);
 		} else if (strncmp(RES.rxBuffer, "CONNECTED", strlen("CONNECTED")) == 0){
 			teste = 4;
+			sprintf(uartBuff, "Conectado\r\n");
+			HAL_UART_Transmit(&huart2, (uint8_t *)uartBuff, strlen(uartBuff), HAL_MAX_DELAY);
 		}
 
 		RES.rxBuffer[0] = '\0';
+	}
+}
+
+void MasterController (ConfigRES RES) {
+	SendMessage("CONNECTED");
+	uint8_t count = 0;
+	if (car == READY) {
+		while (count <= 50){
+			count++;
+			SendMessage("READY");
+		}
+		HAL_Delay(2000);
+	} else if (car == GO){
+		while (count <= 20){
+			count++;
+			SendMessage("GO");
+		}
+	} else if (car == EMERGENCY){
+		while (count <= 20){
+			count++;
+			SendMessage("EMERGENCY");
+		}
 	}
 }

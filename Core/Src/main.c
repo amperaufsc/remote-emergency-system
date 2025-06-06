@@ -99,8 +99,9 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-    mainLoRa();
+
     /* USER CODE BEGIN 3 */
+	  mainLoRa();
   }
   /* USER CODE END 3 */
 }
