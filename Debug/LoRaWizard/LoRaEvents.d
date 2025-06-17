@@ -35,6 +35,8 @@ LoRaWizard/LoRaEvents.o: ../LoRaWizard/LoRaEvents.c \
  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h \
  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_subghz.h \
  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_spi.h \
+ ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h \
+ ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h \
  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h \
  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h \
  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h \
@@ -84,6 +86,8 @@ C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/Drivers/Rad
 ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h:
 ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_subghz.h:
 ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_spi.h:
+../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h:
+../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h:
 ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h:
 ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h:
 ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h:

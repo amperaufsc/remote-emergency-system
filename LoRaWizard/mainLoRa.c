@@ -11,6 +11,8 @@
 
 extern UART_HandleTypeDef huart2;
 enum CarState car = STATE_NULL;
+enum CarState LastState = STATE_NULL;
+bool connected = false;
 
 void mainLoRa(void) {
 	HAL_NVIC_DisableIRQ(EXTI15_10_IRQn);
@@ -34,74 +36,48 @@ void mainLoRa(void) {
     }
 }
 
-uint8_t count = 0;
-void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
-	switch (GPIO_Pin) {
-		case NextState_Pin:
-			count = 0;
-			while (count <= 100){
-				count++;
-				SendMessage("EMERGENCY");
-			}
-			/*car++;
-			uint8_t count = 0;
-			if (car == READY) {
-				while (count <= 100){
-					count++;
-					SendMessage("READY");
-				}
-				HAL_Delay(2000);
-			} else if (car == GO){
-				while (count <= 100){
-					count++;
-					SendMessage("GO");
-				}
-			} else if (car == EMERGENCY){
-				while (count <= 100){
-					count++;
-					SendMessage("EMERGENCY");
-				}
-			}*/
-			break;
-    }
-}
-
 void CAN_SEND (){
 
 }
 
-uint8_t teste = 0;
-void SlaveController (ConfigRES RES) {
-	while (true) {
-		receiveMessage(RES.rxBuffer, 20 , RES.rxTimeout);
-		char uartBuff[255];
-		sprintf(uartBuff, "%s\r\n", &RES.rxBuffer);
-		HAL_UART_Transmit(&huart2, (uint8_t *)uartBuff, strlen(uartBuff), HAL_MAX_DELAY);
-		if (strncmp(RES.rxBuffer, "READY", strlen("READY")) == 0){
-			teste = 1;
-		} else if (strncmp(RES.rxBuffer, "GO", strlen("GO")) == 0){
+void ChangeState (enum CarState state) {
+	char uartBuff[255];
+	switch (state){
+		case READY:
+			break;
+		case GO:
+			sprintf(uartBuff, "GO\r\n");
+			HAL_UART_Transmit(&huart2, (uint8_t *)uartBuff, strlen(uartBuff), HAL_MAX_DELAY);
 			HAL_GPIO_WritePin(EBS_GPIO_Port, EBS_Pin, 1);
 			HAL_GPIO_WritePin(ShutDown_GPIO_Port, ShutDown_Pin, 1);
-			teste = 2;
-		} else if (strncmp(RES.rxBuffer, "EMERGENCY", strlen("EMERGENCY")) == 0){
-			teste = 3;
+			break;
+		case EMERGENCY:
 			sprintf(uartBuff, "Emergency\r\n");
 			HAL_UART_Transmit(&huart2, (uint8_t *)uartBuff, strlen(uartBuff), HAL_MAX_DELAY);
 			HAL_GPIO_WritePin(EBS_GPIO_Port, EBS_Pin, 0);
 			HAL_GPIO_WritePin(ShutDown_GPIO_Port, ShutDown_Pin, 0);
-		} else if (strncmp(RES.rxBuffer, "CONNECTED", strlen("CONNECTED")) == 0){
-			teste = 4;
-			sprintf(uartBuff, "Conectado\r\n");
-			HAL_UART_Transmit(&huart2, (uint8_t *)uartBuff, strlen(uartBuff), HAL_MAX_DELAY);
-		}
+			break;
+	}
+}
 
+void SlaveController (ConfigRES RES) {
+	while (true) {
+		receiveMessage(RES.rxBuffer, 20 , RES.rxTimeout);
+		if (strncmp(RES.rxBuffer, "READY", strlen("READY")) == 0);
+		else if (strncmp(RES.rxBuffer, "GO", strlen("GO")) == 0) ChangeState(GO);
+		else if (strncmp(RES.rxBuffer, "EMERGENCY", strlen("EMERGENCY")) == 0) ChangeState(EMERGENCY);
+		else if (strncmp(RES.rxBuffer, "CONNECTED", strlen("CONNECTED")) == 0){
+			connected = true; // conta tempo a cada 3 s
+		}
 		RES.rxBuffer[0] = '\0';
 	}
 }
 
 void MasterController (ConfigRES RES) {
-	SendMessage("CONNECTED");
 	uint8_t count = 0;
+	while (LastState == car) {
+		SendMessage("CONNECTED");
+	}
 	if (car == READY) {
 		while (count <= 50){
 			count++;
@@ -119,4 +95,5 @@ void MasterController (ConfigRES RES) {
 			SendMessage("EMERGENCY");
 		}
 	}
+	LastState = car;
 }

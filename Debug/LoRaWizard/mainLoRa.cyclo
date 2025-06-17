@@ -1,5 +1,5 @@
-../LoRaWizard/mainLoRa.c:15:6:mainLoRa	3
-../LoRaWizard/mainLoRa.c:38:6:HAL_GPIO_EXTI_Callback	3
-../LoRaWizard/mainLoRa.c:69:6:CAN_SEND	1
-../LoRaWizard/mainLoRa.c:74:6:SlaveController	5
-../LoRaWizard/mainLoRa.c:102:6:MasterController	7
+../LoRaWizard/mainLoRa.c:17:6:mainLoRa	3
+../LoRaWizard/mainLoRa.c:39:6:CAN_SEND	1
+../LoRaWizard/mainLoRa.c:43:6:ChangeState	5
+../LoRaWizard/mainLoRa.c:63:6:SlaveController	5
+../LoRaWizard/mainLoRa.c:76:6:MasterController	8

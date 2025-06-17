@@ -1,2 +1,2 @@
 ../LoRaWizard/LoRaMessageHandler.c:10:15:SendMessage	16	static
-../LoRaWizard/LoRaMessageHandler.c:33:15:receiveMessage	24	static
+../LoRaWizard/LoRaMessageHandler.c:29:15:receiveMessage	24	static

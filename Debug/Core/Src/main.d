@@ -31,11 +31,13 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h \
  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_subghz.h \
  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_spi.h \
+ ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h \
+ ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h \
  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h \
  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h \
  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h \
- ../Core/Inc/subghz.h ../Core/Inc/main.h ../Core/Inc/usart.h \
- ../Core/Inc/gpio.h \
+ ../Core/Inc/subghz.h ../Core/Inc/main.h ../Core/Inc/tim.h \
+ ../Core/Inc/usart.h ../Core/Inc/gpio.h \
  C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/LoRaWizard/mainLoRa.h \
  C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/LoRaWizard/LoraConf.h \
  C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/LoRaWizard/LoRaEvents.h \
@@ -84,11 +86,14 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h:
 ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_subghz.h:
 ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_spi.h:
+../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h:
+../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h:
 ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h:
 ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h:
 ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h:
 ../Core/Inc/subghz.h:
 ../Core/Inc/main.h:
+../Core/Inc/tim.h:
 ../Core/Inc/usart.h:
 ../Core/Inc/gpio.h:
 C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/LoRaWizard/mainLoRa.h:

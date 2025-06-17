@@ -12,8 +12,6 @@ LoRaIrqStatus SendMessage(const char *message) {
 		return IRQ_CRC_ERROR_STATUS;  // Invalid message
 	}
 
-	HAL_Delay(100);
-
 	SUBGRF_SetDioIrqParams( IRQ_TX_DONE | IRQ_RX_TX_TIMEOUT,
 	                          IRQ_TX_DONE | IRQ_RX_TX_TIMEOUT,
 	                          IRQ_RADIO_NONE,
@@ -24,8 +22,6 @@ LoRaIrqStatus SendMessage(const char *message) {
 	packetParams.Params.LoRa.PayloadLength = strlen(message);
 	SUBGRF_SetPacketParams(&packetParams);
 	SUBGRF_SendPayload((uint8_t *)message, strlen(message), 0);
-
-	HAL_Delay(200);
 
 	return getLastLoRaEvent();
 }
