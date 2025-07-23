@@ -1,5 +1,5 @@
-../LoRaWizard/mainLoRa.c:17:6:mainLoRa	3
-../LoRaWizard/mainLoRa.c:39:6:CAN_SEND	1
-../LoRaWizard/mainLoRa.c:43:6:ChangeState	5
-../LoRaWizard/mainLoRa.c:63:6:SlaveController	5
-../LoRaWizard/mainLoRa.c:76:6:MasterController	8
+../LoRaWizard/mainLoRa.c:20:6:mainLoRa	3
+../LoRaWizard/mainLoRa.c:45:6:HAL_Tim_PeriodElapsedCallback	2
+../LoRaWizard/mainLoRa.c:49:6:ChangeState	5
+../LoRaWizard/mainLoRa.c:66:6:SlaveController	6
+../LoRaWizard/mainLoRa.c:90:6:MasterController	8

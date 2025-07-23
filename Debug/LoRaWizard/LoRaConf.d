@@ -1,7 +1,7 @@
 LoRaWizard/LoRaConf.o: ../LoRaWizard/LoRaConf.c ../LoRaWizard/LoRaConf.h \
  ../LoRaWizard/LoRaEvents.h \
- C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/Drivers/Radio/radio_driver.h \
- C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/Drivers/Radio/radio_conf.h \
+ C:/Users/luizf/Documents/GitHub/remote-emergency-system/Drivers/Radio/radio_driver.h \
+ C:/Users/luizf/Documents/GitHub/remote-emergency-system/Drivers/Radio/radio_conf.h \
  ../Core/Inc/platform.h \
  ../Drivers/CMSIS/Device/ST/STM32WLxx/Include/stm32wlxx.h \
  ../Drivers/CMSIS/Device/ST/STM32WLxx/Include/stm32wl55xx.h \
@@ -41,19 +41,19 @@ LoRaWizard/LoRaConf.o: ../LoRaWizard/LoRaConf.c ../LoRaWizard/LoRaConf.h \
  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h \
  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h \
  ../Core/Inc/main.h \
- C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo_radio.h \
- C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo_errno.h \
- C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo_conf.h \
- C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo.h \
+ C:/Users/luizf/Documents/GitHub/remote-emergency-system/Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo_radio.h \
+ C:/Users/luizf/Documents/GitHub/remote-emergency-system/Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo_errno.h \
+ C:/Users/luizf/Documents/GitHub/remote-emergency-system/Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo_conf.h \
+ C:/Users/luizf/Documents/GitHub/remote-emergency-system/Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo.h \
  ../Core/Inc/subghz.h \
- C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/Utils/misc/stm32_mem.h \
- C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/Utils/conf/utilities_conf.h \
+ C:/Users/luizf/Documents/GitHub/remote-emergency-system/Utils/misc/stm32_mem.h \
+ C:/Users/luizf/Documents/GitHub/remote-emergency-system/Utils/conf/utilities_conf.h \
  ../Drivers/CMSIS/Include/cmsis_compiler.h \
- C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/Drivers/Radio/radio_board_if.h
+ C:/Users/luizf/Documents/GitHub/remote-emergency-system/Drivers/Radio/radio_board_if.h
 ../LoRaWizard/LoRaConf.h:
 ../LoRaWizard/LoRaEvents.h:
-C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/Drivers/Radio/radio_driver.h:
-C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/Drivers/Radio/radio_conf.h:
+C:/Users/luizf/Documents/GitHub/remote-emergency-system/Drivers/Radio/radio_driver.h:
+C:/Users/luizf/Documents/GitHub/remote-emergency-system/Drivers/Radio/radio_conf.h:
 ../Core/Inc/platform.h:
 ../Drivers/CMSIS/Device/ST/STM32WLxx/Include/stm32wlxx.h:
 ../Drivers/CMSIS/Device/ST/STM32WLxx/Include/stm32wl55xx.h:
@@ -93,12 +93,12 @@ C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/Drivers/Rad
 ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h:
 ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h:
 ../Core/Inc/main.h:
-C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo_radio.h:
-C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo_errno.h:
-C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo_conf.h:
-C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo.h:
+C:/Users/luizf/Documents/GitHub/remote-emergency-system/Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo_radio.h:
+C:/Users/luizf/Documents/GitHub/remote-emergency-system/Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo_errno.h:
+C:/Users/luizf/Documents/GitHub/remote-emergency-system/Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo_conf.h:
+C:/Users/luizf/Documents/GitHub/remote-emergency-system/Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo.h:
 ../Core/Inc/subghz.h:
-C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/Utils/misc/stm32_mem.h:
-C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/Utils/conf/utilities_conf.h:
+C:/Users/luizf/Documents/GitHub/remote-emergency-system/Utils/misc/stm32_mem.h:
+C:/Users/luizf/Documents/GitHub/remote-emergency-system/Utils/conf/utilities_conf.h:
 ../Drivers/CMSIS/Include/cmsis_compiler.h:
-C:/Users/luizf/STM32CubeIDE/workspace_1.17.0/remote-emergency-system/Drivers/Radio/radio_board_if.h:
+C:/Users/luizf/Documents/GitHub/remote-emergency-system/Drivers/Radio/radio_board_if.h:

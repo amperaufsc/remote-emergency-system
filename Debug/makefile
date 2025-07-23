@@ -1,6 +1,6 @@
 ################################################################################
 # Automatically-generated file. Do not edit!
-# Toolchain: GNU Tools for STM32 (13.3.rel1)
+# Toolchain: GNU Tools for STM32 (12.3.rel1)
 ################################################################################
 
 -include ../makefile.init
@@ -64,8 +64,8 @@ all: main-build
 main-build: remote-emergency-system.elf secondary-outputs
 
 # Tool invocations
-remote-emergency-system.elf remote-emergency-system.map: $(OBJS) $(USER_OBJS) C:\Users\luizf\STM32CubeIDE\workspace_1.17.0\remote-emergency-system\STM32WL55JCIX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "remote-emergency-system.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\luizf\STM32CubeIDE\workspace_1.17.0\remote-emergency-system\STM32WL55JCIX_FLASH.ld" --specs=nosys.specs -Wl,-Map="remote-emergency-system.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+remote-emergency-system.elf remote-emergency-system.map: $(OBJS) $(USER_OBJS) C:\Users\luizf\Documents\GitHub\remote-emergency-system\STM32WL55JCIX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "remote-emergency-system.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\luizf\Documents\GitHub\remote-emergency-system\STM32WL55JCIX_FLASH.ld" --specs=nosys.specs -Wl,-Map="remote-emergency-system.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
