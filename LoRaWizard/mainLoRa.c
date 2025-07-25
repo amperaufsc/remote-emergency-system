@@ -47,30 +47,24 @@ void HAL_Tim_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 }
 
 void ChangeState (enum CarState state) {
-	char uartBuff[255];
 	switch (state){
 		case READY:
-			HAL_UART_Receive(&huart1, (uartBuff), 1, HAL_MAX_DELAY);
+			car = READY;
 			break;
 		case GO:
-			sprintf(uartBuff, "GO\r\n");
-			HAL_UART_Transmit(&huart1, (uint8_t *)uartBuff, strlen(uartBuff), HAL_MAX_DELAY);
+			car = GO;
 			break;
 		case EMERGENCY:
-			sprintf(uartBuff, "Emergency\r\n");
-			HAL_UART_Transmit(&huart1, (uint8_t *)uartBuff, strlen(uartBuff), HAL_MAX_DELAY);
+			car = EMERGENCY;
 			break;
 	}
+	HAL_UART_Transmit(&huart1, &car, 1, HAL_MAX_DELAY);
 }
 
 void SlaveController (ConfigRES RES) {
 	char uartBuff[255];
 	while (true) {
-		sprintf(uartBuff, "GO\r\n");
-		HAL_UART_Transmit(&huart1, (uint8_t *)uartBuff, strlen(uartBuff), HAL_MAX_DELAY);
-		HAL_UART_Transmit(&huart2, (uint8_t *)uartBuff, strlen(uartBuff), HAL_MAX_DELAY);
-		HAL_Delay(1000);
-		//receiveMessage(RES.rxBuffer, 20 , RES.rxTimeout);
+		receiveMessage(RES.rxBuffer, 20 , RES.rxTimeout);
 		if (strncmp(RES.rxBuffer, "READY", strlen("READY")) == 0);
 		else if (strncmp(RES.rxBuffer, "GO", strlen("GO")) == 0) ChangeState(GO);
 		else if (strncmp(RES.rxBuffer, "EMERGENCY", strlen("EMERGENCY")) == 0) ChangeState(EMERGENCY);
@@ -93,18 +87,18 @@ void MasterController (ConfigRES RES) {
 		SendMessage("CONNECTED");
 	}
 	if (car == READY) {
-		while (count <= 10){
+		while (count <= 5){
 			count++;
 			SendMessage("READY");
 		}
 		HAL_Delay(2000);
 	} else if (car == GO){
-		while (count <= 10){
+		while (count <= 5){
 			count++;
 			SendMessage("GO");
 		}
 	} else if (car == EMERGENCY){
-		while (count <= 10){
+		while (count <= 5){
 			count++;
 			SendMessage("EMERGENCY");
 		}

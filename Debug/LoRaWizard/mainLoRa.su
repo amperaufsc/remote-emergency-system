@@ -1,5 +1,5 @@
 ../LoRaWizard/mainLoRa.c:20:6:mainLoRa	560	static
 ../LoRaWizard/mainLoRa.c:45:6:HAL_Tim_PeriodElapsedCallback	16	static
-../LoRaWizard/mainLoRa.c:49:6:ChangeState	272	static
-../LoRaWizard/mainLoRa.c:66:6:SlaveController	264	static
-../LoRaWizard/mainLoRa.c:90:6:MasterController	16	static
+../LoRaWizard/mainLoRa.c:49:6:ChangeState	16	static
+../LoRaWizard/mainLoRa.c:64:6:SlaveController	264	static
+../LoRaWizard/mainLoRa.c:87:6:MasterController	16	static
