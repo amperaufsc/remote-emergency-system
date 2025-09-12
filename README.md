@@ -23,7 +23,7 @@ O receiver ira receber essas mensagens e deve seguir um padrão de atividades, s
 
 Sabendo dos sinais que cada dispositivo deve utilizar, devemos saber como implantar essa funcionalidades é quais são as regras de utilização, para o funcionamento do mesmo, para isso vamos implementar uma Máquina de estado finita (FSM). E como deve funcionar nossos estados:
 
-![FSM RES](FSM RES.png)
+![FSM RES](FSM-RES.png)
 
 O reset é um método de teste que não deve ser implementado no sistema final sem antes consultar o regulamento.
 
