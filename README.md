@@ -94,7 +94,7 @@ Primeiramente, desabilito todas as interrupções para que não ocorra nenhuma f
 
 Ele sempre envia a mensagem para se conectar e, ao receber uma alteração no botão, muda de estado, seguindo a ordem pré-estabelecida, e envia a nova condição para o receiver.
 
-##### Slave
+#### Slave
 
 Neste ponto, mais ações são realizadas. Primeiramente, o sistema sempre aguarda o recebimento de uma mensagem. Após recebê-la, ele faz uma verificação para ver se ela corresponde a um dos comandos esperados. Em caso afirmativo, o estado do carro é alterado e a ação destinada àquela mensagem é executada. 
 
