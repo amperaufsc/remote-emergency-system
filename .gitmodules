@@ -1,0 +1,3 @@
+[submodule "remote-emergency-system-slave"]
+	path = remote-emergency-system-slave
+	url = https://github.com/amperaufsc/remote-emergency-system-slave.git
